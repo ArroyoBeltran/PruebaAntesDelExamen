@@ -65,7 +65,7 @@
       <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Secuencia principal" sap:VirtualizedContainerService.HintSize="486,1981.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="Secuencia principal" sap:VirtualizedContainerService.HintSize="486,2084" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Mensaje" />
       <Variable x:TypeArguments="x:Boolean" Name="guardar" />
@@ -168,8 +168,9 @@
         </Sequence>
       </ui:InterruptibleWhile.Body>
       <ui:InterruptibleWhile.Condition>
-        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="contadorCola&lt;=5" />
+        <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="contadorCola&lt;=5" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_2" />
       </ui:InterruptibleWhile.Condition>
     </ui:InterruptibleWhile>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="444,62.6666666666667" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="Escribimos una línea de control" />
   </Sequence>
 </Activity>
